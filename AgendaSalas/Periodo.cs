@@ -22,5 +22,18 @@ namespace AgendaSalas
         Horario _horarios;
         float _preco;
         bool _estaAtiva;
+
+        public Periodo(float preco, bool estaAtiva, DiaSemana diaSemana, Horario horarios)
+        {
+            Preco = preco;
+            EstaAtiva = estaAtiva;
+            DiaSemana = diaSemana;
+            Horarios = horarios;
+        }
+
+        public float Preco { get => _preco; set => _preco = value; }
+        public bool EstaAtiva { get => _estaAtiva; set => _estaAtiva = value; }
+        internal DiaSemana DiaSemana { get => diaSemana; set => diaSemana = value; }
+        internal Horario Horarios { get => _horarios; set => _horarios = value; }
     }
 }

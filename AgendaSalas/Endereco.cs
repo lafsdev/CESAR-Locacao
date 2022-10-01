@@ -12,5 +12,18 @@ namespace AgendaSalas
         string _bairro;
         string _numero;
         string _complemento;
+
+        public Endereco(string logradouro, string bairro, string numero, string complemento)
+        {
+            Logradouro = logradouro;
+            Bairro = bairro;
+            Numero = numero;
+            Complemento = complemento;
+        }
+
+        public string Logradouro { get => _logradouro; set => _logradouro = value; }
+        public string Bairro { get => _bairro; set => _bairro = value; }
+        public string Numero { get => _numero; set => _numero = value; }
+        public string Complemento { get => _complemento; set => _complemento = value; }
     }
 }

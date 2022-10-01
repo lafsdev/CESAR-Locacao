@@ -10,5 +10,14 @@ namespace AgendaSalas
     {
         DateTime _inicio;
         DateTime _fim;
+
+        public Horario(DateTime inicio, DateTime fim)
+        {
+            Inicio = inicio;
+            Fim = fim;
+        }
+
+        public DateTime Inicio { get => _inicio; set => _inicio = value; }
+        public DateTime Fim { get => _fim; set => _fim = value; }
     }
 }
